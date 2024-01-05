@@ -34,7 +34,7 @@ public class Locators {
         //  locate the password field box for input
         WebElement password=driver.findElement(By.name("pass"));
 
-        //  enters text in to the password filed
+        //  enters text in to the password field
         password.sendKeys("abcd");
 
         //  locates the login button
@@ -48,5 +48,7 @@ public class Locators {
 
         // click the create account button
         createAccount.click();
+
+        driver.quit();
     }
 }
