@@ -26,7 +26,7 @@ public class JSExecutor {
 
         Thread.sleep(10000); // HOLD THE SITE FOR 6 SECONDS
         //Scrolling up
-        //js.executeScript("window.scrollBy(0,-1000)");
+        js.executeScript("window.scrollBy(0,-1000)");
 
         //Get the click button
         WebElement fileupload = driver.findElement(By.xpath("//a[text()='File Upload']"));
