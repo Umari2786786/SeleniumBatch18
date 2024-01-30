@@ -21,7 +21,7 @@ public class JSExecutor {
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("arguments[0].style.border='3px solid red'",hoverBtn);
 
-        //Scrolling up
+        //Scrolling down
         js.executeScript("window.scrollBy(0,1000)");
 
         Thread.sleep(10000); // HOLD THE SITE FOR 6 SECONDS
@@ -31,6 +31,9 @@ public class JSExecutor {
         //Get the click button
         WebElement fileupload = driver.findElement(By.xpath("//a[text()='File Upload']"));
         js.executeScript("arguments[0].click();", fileupload);
+
+        //Screen shotting
+
 
 
         Thread.sleep(2000); // HOLD THE SITE FOR 6 SECONDS!
